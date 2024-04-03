@@ -125,8 +125,12 @@ nav{
   font-family: "Rowdies", sans-serif;
   font-weight: 700;
   font-style: normal;
- 
-
+ }
+.figure{
+  color: white;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*COLUNAS DOS FILMES*/
