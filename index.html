@@ -1,93 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tcc</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tcc</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/be7a32246a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Madimi+One&family=Paytone+One&family=Permanent+Marker&family=Rakkas&family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&family=Staatliches&display=swap" rel="stylesheet">
 
-    <!--<div class="marca">
-         <div class-="logo">
-            <img src="https://i.postimg.cc/25mdP2kh/designpretosemfundo.png" width="90%" height="90%">
-        </div>
-    </div>-->
-    <nav>
-        <span class="marca"><img src="https://i.postimg.cc/25mdP2kh/designpretosemfundo.png" width="90%" height="90%"></span>
-                <ul class="menu">
-                    <li><a><a href="https://codepen.io/Lanahv/pen/NWmKvKp">home</a></li>
-                    <li><a>Categorias</a></li>
-                    <li><a>Filmes</a></li>
-                    <li><a>Séries</a></li>
-                    <li><a>Login</a></li>
-                </ul>
-    </nav>
-</header>
+        <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/RVdwk78n/aesthete.png">
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    </head>
+    <main>
+        <body>
+            <header>
+                <nav>
+                    <div class="imagem">
+                        <img src="https://i.postimg.cc/25mdP2kh/designpretosemfundo.png" width="50%">
+                    </div>
+                        <ul class="menu">
+                            <div class="tooltip"><span class="tooltiptext">Ínicio</span><li><i class="fa-solid fa-house"></i></li><!--inicio--></div>
+                            <div class="tooltip"><span class="tooltiptext">Filmes</span><li><a href="filmes/series/"><i class="fa-solid fa-film"></i></a></li><!--filmes--></div>
+                            <div class="tooltip"><span class="tooltiptext">Séries</span><li><a href="filmes/series/"><i class="fa-solid fa-film"></i></a></li><!--series--></div>
+                            <div class="tooltip"><span class="tooltiptext">Login</span><li><a href="logintcc/"><i class="fa-solid fa-user"></i></a></li><!--login--></div><br>
+                        </ul>
+                </nav>
+            </header>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/DfsVP9sq/spectre007movie.jpg" style="width:100%">
+                        <!--007 Spectre-->
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/DZ2FGSkV/bigsky-serie.jpg" style="width:100%">
+                        <!--BigSky /série-->
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/SRWj0W4W/karate-Kid.jpg" style="width:100%">
+                        <!--Karatê Kid-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/zBZmBkfM/princess-diaries.jpg" style="width:100%">
+                        <!--O diário da Princesa-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/c4JHj5zq/hanna-serie.jpg" style="width:100%">
+                        <!--Hanna /série-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/7YS00wwb/creed.jpg" style="width:100%">
+                        <!--Creed-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/0QKnM83m/amordealuguel.jpg" style="width:100%">
+                        <!--Amor de Aluguel-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/MKyHTk4q/will-smith-the-fresh-prince-of-bel-air.webp" style="width:100%">
+                        <!--Um Maluco no Pedaço-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://i.postimg.cc/Dzhk2MM7/a-escolha-perfeita.webp" style="width:100%">
+                        <!--Escolha Perfeita-->
+                    </div>
+
+                    <br><br><br><br><br>
+
+                    <div class="categoria">
+                        <p>LANÇAMENTOS</p>
+                    </div>
+
+                    
+
+                    
+                    
+                <!-- Portfolio Gallery Grid 
+                <div class="row">
+                    <div class="column nature">
+                    <div class="content">
+                        <img src="https://i.postimg.cc/Zq1Vq11K/acorpurpura2024.webp" alt="Mountains" style="width:100%">
+                        <h4>A COR PÚRPURA</h4>
+                        <p>Celie é uma mulher afro-americana que vive no sul dos Estados Unidos no começo do século XX. Ela tenta superar os traumas deixados pelos abusos do pai e do marido ao longo dos anos e, para isso, contará com o apoio e a força de um grupo de mulheres que constrói uma irmandade.</p>
+                    </div>
+                    </div>
+
+                    <div class="column nature">
+                    <div class="content">
+                        <img src="https://i.postimg.cc/PxRZxhgC/meninasmalvadas-omusical.png" alt="Lights" style="width:100%" height="250px">
+                        <h4>GAROTAS MALVADAS: O MUSICAL</h4>
+                        <p>Cady começa em um novo colégio após mudar de cidade e acaba se apaixonando pelo ex-namorado de Regina George, Aaron Samuels, e se torna a principal inimiga da rainha da escola.</p>
+                    </div>
+                    </div>
+
+                    <div class="column nature">
+                    <div class="content">
+                        <img src="https://i.postimg.cc/mrKk5Gn4/madameteia.webp" alt="Nature" style="width:100%" height="250px">
+                        <h4>MADAME TEIA</h4>
+                        <p>Cassandra Webb, uma paramédica em Manhattan, tem habilidades de clarividência. Forçada a confrontar revelações sobre seu passado, ela forja uma relação com três jovens destinadas a futuros poderosos.</p>
+                    </div>
+                    </div>
+
+                    <div class="column cars">
+                    <div class="content">
+                        <img src="https://i.postimg.cc/bvJvmvNd/bobmarley-onelove.webp" alt="Car" style="width:100%">
+                        <h4>BOB MARLEY: ONE LOVE</h4>
+                        <p>Lorem ipsum dolor..</p>
+                    </div>
+                    </div>
+                    
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/NMXBn2hG/Garra-de-Ferro-2023-Luta.jpg" alt="Car" style="width:100%" height="265px">
+                            <h4>GARRA DE FERRO</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/rw4YtjT1/as-apimentadas.jpg" alt="Car" style="width:100%">
+                            <h4>AS APIMENTADAS</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/k4cXqYmJ/mamma-mia-1.jpg" alt="Car" style="width:100%">
+                            <h4>MAMMA MIA</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/Gt9fpKNw/goodgirls.jpg" alt="Car" style="width:100%">
+                            <h4>GOOD GIRLS</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/NFQd9kqB/umababaquaseperfeita.jpg" alt="Car" style="width: 100%">
+                            <h4>UMA BABÁ QUASE PERFEITA</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/Fz13f01t/moana.jpg" alt="Car" style="width:100%">
+                            <h4>MOANA</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/LsW-BJg39/grown-ish.png" alt="Car" style="width:100%">
+                            <h4>GROWN-ISH</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="https://i.postimg.cc/ZqzdqQ1p/Shrek.webp" alt="Car" style="width:100%" height="130px">
+                            <h4>SHREK</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    
+                </div>-->
+
+                <table>
+                    <tr>
+                      <th><img src="https://i.postimg.cc/P5BM6fLd/acorpurpura.jpg" alt="a cor púrpura" style="width:100%"></th>
+                      <th><img src="https://i.postimg.cc/G3f9F2g2/meninasmalvadas.jpg" alt="meninas malvadas" style="width:100%"></th>
+                      <th><img src="https://i.postimg.cc/Kck1kxwd/Madame-teia-poster.jpg" alt="madame teia" style="width:100%" ></th>
+                      <th><img src="https://i.postimg.cc/BQ1Ngjws/planetadosmacacos.jpg" alt="planeta dos macacos" style="width:100%"></th>
+                    </tr>
+                  </table>
+
+                  <br><br><br>
+
+                  <div class="categoria">
+                    <p>FILMES DE AÇÃO</p>
+                  </div>
 
 
-    <div class="mySlides fade">
-        <!--<div class="numbertext">1 / 3</div>-->
-        <img src="https://i.postimg.cc/Y9yhjgn9/007-spectre.jpg" style="width:100%">
-        <!--<div class="text">007 spectre</div>-->
-    </div>
+                  <table>
+                    <tr>
+                        <th><img src="https://i.postimg.cc/8PGJPbwS/mercenarios4.jpg" alt="mercenarios 4" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/6phkRBd3/agentestone.jpg" alt="agente stone" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/xC2DbgCv/am-e.jpg" alt="a mãe" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/dtmzzG53/spectre0007.jpg" alt="007: spectre" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/zD9DkmBN/exercitodeladroes2.jpg" alt="007: spectre" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/k5X75qjQ/umespiaoemeio.jpg" alt="007: spectre" style="width:105%" height="350px"></th>
+                    </tr>
+                  </table>
+
+                  <br><br>
+
+                  <div class="categoria">
+                    <p>GIRL POWER: FILMES PROTAGONIZADOS POR MULHERES</p>
+                  </div>
+
+                  <table>
+                    <tr>
+                        <th><img src="https://i.postimg.cc/RVR69jHw/tombraider.jpg" alt="tomb raider" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/6phkRBd3/agentestone.jpg" alt="agente stone" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/wMJ0r94K/agarotadateia.jpg" alt="a garota da teia" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/xC2DbgCv/am-e.jpg" alt="007: spectre" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/C1Yh5sX9/meuex-umespiao.jpg" alt="meu ex é um espiao" style="width:100%" height="350px"></th>
+                        <th><img src="https://i.postimg.cc/yYm6c5XW/bumblebee.jpg" alt="bumblebee" style="width:105%" height="350px"></th>
+                    </tr>
+                  </table>
   
-    <div class="mySlides fade">
-        <!--<div class="numbertext">2 / 3</div>-->
-        <img src="https://i.postimg.cc/DZ2FGSkV/bigsky-serie.jpg" style="width:100%">
-        <!--<div class="text">Big Sky</div>-->
-    </div>
 
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">4 / 4</div>-->
-        <img src="https://i.postimg.cc/c4JHj5zq/hanna-serie.jpg" style="width:100%">
-        <!--<div class="text">Hanna</div>-->
-    </div>
 
-  
-    <div class="mySlides fade">
-        <!--<div class="numbertext">3 / 3</div>-->
-        <img src="https://i.postimg.cc/4ydXmTfG/umabab-quaseperfeita.jpg" style="width:100%">
-        <!--<div class="text">Uma Babá Quase Perfeita</div>-->
-    </div>
 
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">4 / 4</div>-->
-        <img src="https://i.postimg.cc/rpVxyQ0k/jogosvorazes.jpg" style="width:100%">
-        <!--<div class="text">Jogos Vorazes</div>-->
-    </div>
+                   
 
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">4 / 4</div>-->
-        <img src="https://i.postimg.cc/XNTPZb7g/escolhaperfeita.jpg" style="width:100%">
-        <!--<div class="text">Escolha Perfeita</div>-->
-    </div>
+                
 
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">4 / 4</div>-->
-        <img src="https://i.postimg.cc/MTJcMHNS/clubedoscinco.webp" style="width:100%">
-        <!--<div class="text">O Clube dos Cinco</div>-->
-    </div>
- 
- 
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+            
 
-<script defer src="script.js"></script>
-</body>
+                
+            <script defer src="script.js"></script>
+        </body>
+    </main>
 </html>
