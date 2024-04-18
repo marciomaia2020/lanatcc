@@ -1,0 +1,48 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(33.33% - 20px); /* Define o tamanho dos cartões */
+    margin-right: 20px; /* Adiciona um espaço entre os cartões */
+    
+  }
+  
+  .carousel-item:last-child {
+    margin-right: 0; /* Remove a margem do último cartão */
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+
+
+  .carousel-item img{
+    width: 50%;
+    justify-content: space-between;
+  }
+ 
