@@ -106,17 +106,6 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos para a galeria */
 .gallery {
   display: flex;
@@ -148,6 +137,6 @@ nav{
 }
 
 .image:hover img {
-filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque */
+filter: blur(1px); /*Altere o valor para ajustar o grau de desfoque */
  transform: scale(1.1); /* Aumenta o tamanho da imagem */
 }

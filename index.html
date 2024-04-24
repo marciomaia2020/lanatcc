@@ -28,7 +28,14 @@
                             <div class="tooltip"><span class="tooltiptext">Login</span><li><a href="logintcc/"><i class="fa-solid fa-user fa-xl" style="color: #f50000;"></i></a></li></div><br>
                             <button onclick="incrementCount()">CLIQUE AQUI</button>
                             <span id="count-display">0</span>
-                    
+                            <script>
+                                let count = 0;
+
+                                function incrementCount() {
+                                count++;
+                                document.getElementById("count-display").textContent = count;
+                            }
+                            </script>
                         </ul>
                 </nav>
             </header>
