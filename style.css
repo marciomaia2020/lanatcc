@@ -1,3 +1,4 @@
+
 body{
   background-color:#0c0e18;
 }
@@ -143,34 +144,87 @@ nav{
 
 
 
+/* Estilos para a galeria 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaço entre as imagens 
 }
 
-.gallery-item {
+/* Estilos para o contêiner da imagem e legenda 
+.image-container {
+  width: 200px; /* Largura fixa para cada item 
+  text-align: center;
+}
+
+/* Estilos para as imagens 
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos para a legenda 
+.caption {
+  margin-top: 10px; /* Espaço entre a imagem e a legenda 
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;;
+}
+
+.image:hover img {
+filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque 
+ transform: scale(1.1); /* Aumenta o tamanho da imagem 
+}
+*/
+
+/*carousel girl power*/
+
+.carousel-container {
   position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-.gallery-item figcaption {
-  text-align: center;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #ffffff;
-  font-family:  "Rowdies", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.slide {
+  flex: 0 0 auto;
+  margin-right: 5px; /* Espaçamento entre os slides */
+  width: 250px; /* Ajuste conforme necessário */
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
-  filter: blur(1px);
+.slide img {
+  max-width: 100%;
+
 }
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
+
