@@ -122,9 +122,9 @@ nav{
 
 /* Estilos para as imagens */
 .image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 207px;
+  height: 330px;
+  display: inline;
 }
 
 /* Estilos para a legenda */

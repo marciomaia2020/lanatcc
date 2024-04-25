@@ -107,9 +107,9 @@
   
   /* Estilos para as imagens */
   .image img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 205px;
+    height: 335px;
+    display: inline;
   }
   
   /* Estilos para a legenda */

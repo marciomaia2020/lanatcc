@@ -1,6 +1,6 @@
-
 body{
   background-color:#0c0e18;
+ 
 }
 
 ul {
@@ -144,30 +144,30 @@ nav{
 
 
 
-/* Estilos para a galeria 
+/* Estilos para a galeria */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Espaço entre as imagens 
+  gap: 90px; /* Espaço entre as imagens */
 }
 
-/* Estilos para o contêiner da imagem e legenda 
+/* Estilos para o contêiner da imagem e legenda */
 .image-container {
-  width: 200px; /* Largura fixa para cada item 
+  width: 200px; /* Largura fixa para cada item */
   text-align: center;
 }
 
-/* Estilos para as imagens 
+/* Estilos para as imagens*/ 
 .image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 270px;
+  height: 400px;
+  display: inline;
 }
 
-/* Estilos para a legenda 
+/* Estilos para a legenda */
 .caption {
-  margin-top: 10px; /* Espaço entre a imagem e a legenda 
+  margin-top: 10px; /* Espaço entre a imagem e a legenda */
   color: white;
   font-family: "Paytone One", sans-serif;
   font-weight: 400;
@@ -175,10 +175,14 @@ nav{
 }
 
 .image:hover img {
-filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque 
- transform: scale(1.1); /* Aumenta o tamanho da imagem 
+filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque */
+ transform: scale(1.1); /* Aumenta o tamanho da imagem */
 }
-*/
+
+
+
+
+
 
 /*carousel girl power*/
 
@@ -201,6 +205,10 @@ filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque
 
 .slide img {
   max-width: 100%;
+  width: 235px;
+  height: 330px;
+  display: inline;
+  
 
 }
 
@@ -210,7 +218,7 @@ filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #ffffff;
   border: none;
   padding: 10px;
   font-size: 20px;
@@ -219,26 +227,12 @@ filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque
 }
 
 .prev-button {
-  left: 10px;
+  left: 1px;
 }
 
 .next-button {
   right: 10px;
 }
-
-
-/*tabela
-.exercicio */
-  .ex th, td {
-    border:1px solid rgb(172, 172, 172);
-    width:50%;
-    padding: 10px;
-    color: aliceblue;
-    padding-left: 50px;
-  }
-
-
-
 
 
 
