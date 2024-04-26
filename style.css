@@ -1,6 +1,11 @@
+* {
+  margin-left: 10px ;
+  margin-right: 10px;
+}
+
+
 body{
   background-color:#0c0e18;
- 
 }
 
 ul {
@@ -12,7 +17,7 @@ ul {
   position: absolute;
   top: 0;
   left: 19px;
-  width: 265px;
+  width: 275px;
 }
 
 .img {
@@ -143,13 +148,12 @@ nav{
 }
 
 
-
 /* Estilos para a galeria */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 90px; /* Espaço entre as imagens */
+  gap: 10px; /* Espaço entre as imagens */
 }
 
 /* Estilos para o contêiner da imagem e legenda */
@@ -160,8 +164,8 @@ nav{
 
 /* Estilos para as imagens*/ 
 .image img {
-  width: 270px;
-  height: 400px;
+  width: 220px;
+  height: 350px;
   display: inline;
 }
 
