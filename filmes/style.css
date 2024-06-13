@@ -40,7 +40,7 @@ nav{
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  color:rgb(155, 0, 0); 
+  color:rgb(148, 13, 13); 
   font-size: larger;
   float: right;
 }
