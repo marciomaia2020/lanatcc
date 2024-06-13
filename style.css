@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+body{
+  background-color: black;
+}
+
 /*CABEÇALHO (CATEGORIA,FILME...)*/
 header{
   z-index: 999;
@@ -224,15 +228,6 @@ section{
 
 
 /*resto da página*/
-body{
-  background-color:#000000;
-}
-
-ul {
-  list-style: none;
-
-}
-
 .imagem {
   position: absolute;
   top: 0;
@@ -244,67 +239,6 @@ ul {
   max-width: 100%;
   height: auto;
 }
-
-/*nav{
-  max-width: 1120px;
-  margin: auto;
-  padding: 1.5rem 10rem;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu{
-  position: fixed;
-  top: 0;
-  right: 20px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  gap: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  color:rgb(155, 0, 0); 
-  font-size: larger;
-  float: right;
-}
-
-* {box-sizing:border-box}*/
-
-/* Slideshow container 
-.slideshow-container {
-  max-width: 1500px;
- /* position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-}
-
-/* Hide the images by default 
-.mySlides {
-  display: none;
-}
-
-
-/* On hover, add a black background color with a little bit see-through 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* Fading animation 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
 
 /*TOOLTIP
 .tooltip {
@@ -346,14 +280,6 @@ ul {
   opacity: 1;
 }
 
-
-.categoria{
-  color: white;
-  font-family: "Rowdies", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .figure{
   width: 50px;
 
@@ -373,7 +299,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Espaço entre as imagens */
+  gap: 20px; /* Espaço entre as imagens */
 }
 
 /* Estilos para o contêiner da imagem e legenda */
@@ -382,10 +308,10 @@ ul {
   text-align: center;
 }
 
-/* Estilos para as imagens*/ 
+/* Estilos para as imagens */
 .image img {
-  width: 220px;
-  height: 350px;
+  width: 207px;
+  height: 330px;
   display: inline;
 }
 
@@ -399,64 +325,19 @@ ul {
 }
 
 .image:hover img {
-filter: blur(2px); /*Altere o valor para ajustar o grau de desfoque */
+filter: blur(1px); /*Altere o valor para ajustar o grau de desfoque */
  transform: scale(1.1); /* Aumenta o tamanho da imagem */
 }
 
-
-
-
-
-
-/*carousel girl power*/
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.lançamento{
+  color: white;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 50px;
 }
 
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
 
-.slide {
-  flex: 0 0 auto;
-  margin-right: 5px; /* Espaçamento entre os slides */
-  width: 250px; /* Ajuste conforme necessário */
-}
-
-.slide img {
-  max-width: 100%;
-  width: 235px;
-  height: 330px;
-  display: inline;
-  
-
-}
-
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.prev-button {
-  left: 1px;
-}
-
-.next-button {
-  right: 10px;
-}
 
 
 
