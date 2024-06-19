@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="redor">
+        <div class="formulario">
+            <form action="processa_formulario.php" method="post">
+                <label for="fname">Nome:</label>
+                <br>
+                <input type="text" id="fname" value="">
+                <br><br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" id="email" name="Email" value="">
+                <br><br>
+                Comentário:
+                <br>
+                <textarea id="comentario" cols="40" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
