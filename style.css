@@ -12,7 +12,7 @@ body{
   background-color: #000000;
 }
 
-/*CABEÇALHO (CATEGORIA,FILME...)*/
+/*CABEÇALHO (CATEGORIA,FILME...)
 header{
   z-index: 999;
   position: absolute;
@@ -65,9 +65,21 @@ header .navigation .navigation-items a:hover:before{
 
 section{
   padding: 100px 200px;
-}
+}*/
 
-/*NOVO HEADER*/
+header{
+  position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0); /* Fundo branco com 80% de opacidade */
+      color: #333;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+      z-index: 1000; /* Certifica-se de que o cabeçalho está acima de outros elementos */
+      backdrop-filter: blur(10px); /* Adiciona desfoque ao fundo para melhorar a transparência */
+}
+/*NOVO HEADER
 .container{
   max-width: 1280px;
   margin: auto;
@@ -85,11 +97,16 @@ header{
   position: fixed;
   top: 0;
   left: 0;
+  transition: .5s;
 }
 
 header.rolagem{
   background-color: #fff;
   padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+  color: blueviolet;
 }
 
 header i{
@@ -103,13 +120,13 @@ header ul{
 
 header ul li{
   display: inline-block;
-  margin: 0 40px;
+  margin: 0 10px;
 }
 
 header ul li a{
   color:#fff;
   text-decoration: none;
-}
+}*/
 
 
 
