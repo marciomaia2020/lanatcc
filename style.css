@@ -67,6 +67,62 @@ section{
   padding: 100px 200px;
 }
 
+/*NOVO HEADER*/
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header.rolagem{
+  background-color: #fff;
+  padding: 20px 4%;
+}
+
+header i{
+  font-size: 30px;
+  color: #fff;
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a{
+  color:#fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*SLIDE*/
 .home{
   position: relative;
