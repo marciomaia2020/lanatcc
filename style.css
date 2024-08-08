@@ -361,9 +361,14 @@ textarea {
   height: 100px; 
 }
 
-.nameError{
+.error {
   color: red;
+  font-size: 0.9em;
 }
+.valid {
+  color: green;
+}
+
 
 
 
