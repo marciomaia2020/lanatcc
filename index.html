@@ -45,6 +45,7 @@
                 </div>
             </header>
         
+        
             <section class="home">
                 <video class="video-slide active" src="/trailers/creed.mp4" autoplay muted loop></video>
                 <video class="video-slide" src="/trailers/barbie1.mp4" autoplay muted loop></video>
@@ -146,21 +147,26 @@
                     <div class="formulario">
                         <form action="https://formspree.io/f/mdknnvzb" method="post">
                             <label for="fname">Nome:</label>
-                            <br>
                             <input type="text" id="fname" value="">
+                            <span id="nameError" class="nameError"></span>
                             <br><br>
                             <label for="email">Email:</label>
-                            <br>
                             <input type="text" id="email" name="Email" value="">
+                            <span id="emailError" class="emailError"></span>
                             <br><br>
                             Comentário:
                             <br>
                             <textarea id="comentario" cols="40" rows="10"></textarea>
-                            <br>
                             <input type="submit" value="Enviar">
+                            <span id="comentarioError" class="comentarioError"></span>
                         </form>
                     </div>
                 </div>
+
+            
+            
+
+           
                 
 
                     
@@ -168,7 +174,7 @@
        
 
                 
-            <script defer src="script.js"></script>
+            <script defer src="script.js" ></script>
         </body>
     </main>
 </html>

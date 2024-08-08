@@ -1,57 +1,3 @@
-/*let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-
-
-filterSelection("all") // Execute the function and show all columns
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const prevButton = document.querySelector(".prev-button");
-  const nextButton = document.querySelector(".next-button");
-  const carousel = document.querySelector(".carousel");
-
-  let currentIndex = 0;
-
-  nextButton.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % carousel.children.length;
-      updateCarousel();
-  });
-
-  prevButton.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
-      updateCarousel();
-  });
-
-  function updateCarousel() {
-      const slideWidth = carousel.children[0].offsetWidth;
-      carousel.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-  }
-});*/
-
-
 //Script para os botoes de navegação do slide
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
@@ -85,7 +31,7 @@ btns.forEach((btn, i) => {
     });
 });
 
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
 
@@ -99,11 +45,67 @@ document.addEventListener("DOMContentLoaded", function() {
           event.preventDefault();
       }
   });
+});*/
+
+
+
+/*VALIDAÇÃO AUTOMÁTICA DO FORM*/
+document.getElementById('formulario').addEventListener('submit', function(event) {
+  // Evitar o envio do formulário até que todas as validações sejam bem-sucedidas
+  event.preventDefault();
+
+  // Limpar erros anteriores
+  let isValid = true;
+  document.getElementById('nomeError').textContent = '';
+  document.getElementById('emailError').textContent = '';
+  document.getElementById('comentarioError').textContent = '';
+
+  // Obter os valores dos campos
+  const name = document.getElementById('fname').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const age = document.getElementById('comentario').value.trim();
+
+  // Validação do nome
+  if (name === '') {
+      document.getElementById('nomeError').textContent = 'Nome é obrigatório.';
+      isValid = false;
+  }
+
+  // Validação do e-mail
+  if (email === '') {
+      document.getElementById('emailError').textContent = 'Email é obrigatório.';
+      isValid = false;
+  } else if (!validateEmail(email)) {
+      document.getElementById('emailError').textContent = 'Email inválido.';
+      isValid = false;
+  }
+
+  // Validação da idade
+  if (age === '') {
+      document.getElementById('comentarioError').textContent = 'Idade é obrigatória.';
+      isValid = false;
+  } else if (age <= 0) {
+      document.getElementById('comentarioError').textContent = 'Idade deve ser um número positivo.';
+      isValid = false;
+  }
+
+  // Se todos os campos estiverem válidos, enviar o formulário
+  if (isValid) {
+      alert('Formulário enviado com sucesso!');
+      // Aqui você pode enviar o formulário usando `form.submit()` ou uma requisição AJAX
+      // document.getElementById('myForm').submit();
+  }
 });
 
+// Função para validar o formato do e-mail
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
 
-/*HEADER*/
-window.addEventListener("scroll", function(){
-  let header = document.querySelector('#header')
-  header.classList.toggle('rolagem', window.scrollY > 0)
-})
+
+function showAlert() {
+    alert('Esta é uma mensagem de alerta!');
+}
+
+

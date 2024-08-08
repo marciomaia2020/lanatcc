@@ -361,10 +361,9 @@ textarea {
   height: 100px; 
 }
 
-
-
-
-
+.nameError{
+  color: red;
+}
 
 
 
