@@ -338,38 +338,6 @@ filter: blur(1px); /*Altere o valor para ajustar o grau de desfoque */
   margin: 50px;
 }
 
-/*CSS DO FORM*/
-.redor {
-  border: 1px solid black;
-  text-align: center;
-  font-style: italic;
-  width: 40%; /* Largura da área vermelha */
-  margin: 0 auto; /* Centralizar horizontalmente */
-  padding: 10px; /* Adiciona um espaçamento interno */
-  background-color: rgb(13, 13, 14);
-}
-
-.formulario {
-  font-size: medium;
-  width: 50%; 
-  margin: 0 auto; 
-  color: #ffffff;
-}
-
-textarea {
-  width: 100%; 
-  height: 100px; 
-}
-
-.error {
-  color: red;
-  font-size: 0.9em;
-}
-.valid {
-  color: green;
-}
-
-
 
 
 
