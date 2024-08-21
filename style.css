@@ -10,7 +10,7 @@
 
 body{
   background-color: #000000;
-}
+} 
 
 /*CABEÇALHO (CATEGORIA,FILME...)*/
 header{
@@ -65,7 +65,8 @@ header .navigation .navigation-items a:hover:before{
 
 section{
   padding: 100px 200px;
-}
+} 
+
 
 /*SLIDE*/
 .home{
