@@ -1,10 +1,9 @@
-*{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
 }
 
@@ -19,25 +18,27 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 200px;
   transition: 0.5s ease;
 }
 
-header .brand{
+  header .brand{
   color: #fff;
   font-size: 2.5em;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   font-family: Alba Super;
-  color: #ee0000;
+  color: #ee0000; 
 }
 
 header .navigation{
   position: relative;
+  position: absolute;
+  position: fixed;
 }
 
 header .navigation .navigation-items a{
@@ -68,7 +69,7 @@ header .navigation .navigation-items a:hover:before{
 
 section{
   padding: 100px 200px;
-} 
+}  
 
 
 /*SLIDE*/
@@ -210,11 +211,14 @@ section{
 
 /* Ativa o slide para exibir o conteúdo corretamente */
 .video-slide.active{
-  clip-path: circle(150% at 50% 50%); /* Ajuste conforme necessário */
-
+  clip-path: circle(150% at 50% 50%);
 }
 
-@media (max-width: 1040px){
+header .navigation{
+  text-align: center;
+}
+
+ @media (max-width: 1040px){
   header{
       padding: 12px 20px;
   }
@@ -230,7 +234,7 @@ section{
   header .navigation{
       display: none;
   }
-}
+} 
 
 
 /*resto da página*/
@@ -331,7 +335,7 @@ section{
 }
 
 .image:hover img {
-filter: blur(1px); /*Altere o valor para ajustar o grau de desfoque */
+filter: blur(1px); /*Ajusta o grau de desfoque */
  transform: scale(1.1); /* Aumenta o tamanho da imagem */
 }
 
