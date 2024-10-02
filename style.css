@@ -12,7 +12,7 @@ body{
 } 
 
 /*CABEÇALHO (CATEGORIA,FILME...)*/
-header{
+/* header{
   z-index: 999;
   position: absolute;
   top: 0;
@@ -69,7 +69,104 @@ header .navigation .navigation-items a:hover:before{
 
 section{
   padding: 100px 200px;
-}  
+}   */
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover{
+  color: orange;
+}
+
+header{
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem
+}
+
+.navbar .burguer{
+  color:#fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+/*dropmenu*/
+.dropmenu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropmenu.open{
+  height: 240px;
+}
+
+.dropmenu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*responsividade*/
+@media(max-width: 992px){
+  .navbar .links{
+    display: none;
+  }
+
+  .navbar .burguer{
+    display: block;
+  }
+
+  .dropmenu{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /*SLIDE*/
