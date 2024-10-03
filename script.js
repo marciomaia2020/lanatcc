@@ -1,9 +1,7 @@
-//Script para os botoes de navegação do slide
+// Script para os botoes de navegação do slide
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
-
-
 
 var sliderNav = function(manual){
     btns.forEach((btn) => {
@@ -32,16 +30,12 @@ btns.forEach((btn, i) => {
 });
 
 
-
-
-
-
+/*NAVBAR*/
+const burguer = document.querySelector('.burguer');
+const dropmenu = document.querySelector('.dropmenu');
 
 function toggleNavbar() {
-    var navbar = document.getElementById("myNavbar");
-    if (navbar.className === "navbar") {
-        navbar.className += " responsive";
-    } else {
-        navbar.className = "navbar";
-    }
+    dropmenu.classList.toggle('open');
 }
+
+burguer.onclick = toggleNavbar;
