@@ -31,11 +31,23 @@ btns.forEach((btn, i) => {
 
 
 /*NAVBAR*/
-const burguer = document.querySelector('.burguer');
-const dropmenu = document.querySelector('.dropmenu');
+// const burguer = document.querySelector('.burguer');
+// const dropmenu = document.querySelector('.dropmenu');
 
-function toggleNavbar() {
-    dropmenu.classList.toggle('open');
-}
+// function toggleNavbar() {
+//     dropmenu.classList.toggle('open');
+// }
 
-burguer.onclick = toggleNavbar;
+// burguer.onclick = toggleNavbar;
+
+
+//menu responsivo
+const menuBtn = document.querySelector(".menu");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("show"); // Alterna a classe show
+  });
+  
+
