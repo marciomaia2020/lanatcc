@@ -22,10 +22,12 @@ header{
   align-items: center;
   padding: 15px 140px;
   transition: 0.5s ease;
+  position: fixed;
 }
 
 header .logo{
   color: #ffffff;
+  font-family: Pirata One;
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
