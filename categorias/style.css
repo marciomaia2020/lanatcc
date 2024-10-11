@@ -3,79 +3,66 @@
     margin: 0;
     padding: 0;
 } */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap:unset;
-    justify-content: center;
-    gap: 10px; /* Espaço entre as imagens */
-    max-width: 1200px; /* Define uma largura máxima para a galeria */
-    margin: 0 auto; /* Centraliza a galeria horizontalmente */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 30px;
 }
 
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Largura 100% para responsividade */
-    max-width: 300px; /* Largura máxima */
-    height: auto; /* Altura automática */
-    border-radius: 5px 5px 30px 0px;
+.slide {
+  position: relative;
+  width: 25%; /* 100% / 4 imagens */
+  min-width: 25%;
 }
 
-.gallery-item img {
-    width: 100%;
-    height: auto; /* Mantém a proporção */
-    object-fit: cover; /* Cobre a área sem distorcer */
-    transition: transform 0.3s ease; /* Efeito de transição */
-    height: 100%; /* Faz com que a imagem preencha toda a altura do item */
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1); /* Zoom ao passar o mouse */
+.slide img {
+  width: 100%;
+  display: block;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade */
-    display: flex;
-    align-items: flex-end; /* Alinha o texto ao fundo */
-    justify-content: flex-start; /* Alinha o texto à esquerda */
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Efeito de transição */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Espaçamento do texto */
+  color: white;
+  opacity: 0; /* Oculto por padrão */
+  transition: opacity 0.3s ease; /* Transição suave */
 }
 
-.gallery-item:hover .overlay {
-    opacity: 1; /* Mostra o overlay ao passar o mouse */
+.overlay h2{
+  top: 0;
+}
+.slide:hover .overlay {
+  opacity: 1; /* Exibe o overlay ao passar o mouse */
 }
 
-.text {
-    color: white; /* Cor do texto */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 10px; /* Espaço ao redor do texto */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    .gallery-item {
-        max-width: 45%; /* Dois itens por linha */
-    }
+.prev {
+  left: 10px;
 }
 
-@media (max-width: 480px) {
-    .gallery-item {
-        max-width: 100%; /* Um item por linha em telas pequenas */
-    }
-
-    .text {
-        font-size: 14px; /* Tamanho da fonte reduzido */
-    }
+.next {
+  right: 10px;
 }
