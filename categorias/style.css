@@ -1,3 +1,8 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,76 +10,72 @@ body {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap:unset;
+    justify-content: center;
+    gap: 10px; /* Espaço entre as imagens */
     max-width: 1200px; /* Define uma largura máxima para a galeria */
     margin: 0 auto; /* Centraliza a galeria horizontalmente */
-    padding: 10px; /* Adiciona padding opcional */
 }
 
 .gallery-item {
-    position: relative; /* Permite o posicionamento da legenda */
+    position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    height: 350px; /* Define uma altura fixa */
+    width: 100%; /* Largura 100% para responsividade */
+    max-width: 300px; /* Largura máxima */
+    height: auto; /* Altura automática */
     border-radius: 5px 5px 30px 0px;
 }
 
 .gallery-item img {
     width: 100%;
+    height: auto; /* Mantém a proporção */
+    object-fit: cover; /* Cobre a área sem distorcer */
+    transition: transform 0.3s ease; /* Efeito de transição */
     height: 100%; /* Faz com que a imagem preencha toda a altura do item */
-    object-fit: cover; /* Corta a imagem para manter a proporção */
-    display: block;
-    transition: transform 0.2s;
 }
 
-.caption {
-    position: absolute; /*legenda sobreponha a imagem */
-    bottom: 0; 
-    left: 0;
-    right: 100px;
-    background: none;
-    color: white; 
-    padding: 20px; 
-    text-align: left;
-    opacity: 0; /*invisível */
-    transition: opacity 0.5s; 
-    font-family: "Paytone One", sans-serif;
-    font-weight: 400;
-    font-style: normal;;;
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
 }
 
-.gallery-item img:hover {
-    transform: scale(1.03);
-    filter: blur(5px); 
-}
-
-.gallery-item:hover .caption{
-    opacity: 1; /* Torna a legenda visível ao passar o mouse */
-}
-
-
-.container{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.slider-container {
-    height: 300px;
-    width: 85vh;
-    max-width: 1400px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.slider-container .btn{
+.overlay {
     position: absolute;
-    top: calc(50% - 30px);
-    height: 15px;
-    width: 15px;
-    border-left: 8px solid;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade */
+    display: flex;
+    align-items: flex-end; /* Alinha o texto ao fundo */
+    justify-content: flex-start; /* Alinha o texto à esquerda */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Efeito de transição */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Mostra o overlay ao passar o mouse */
+}
+
+.text {
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px; /* Espaço ao redor do texto */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .gallery-item {
+        max-width: 45%; /* Dois itens por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        max-width: 100%; /* Um item por linha em telas pequenas */
+    }
+
+    .text {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
 }
