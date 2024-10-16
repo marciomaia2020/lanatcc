@@ -43,7 +43,15 @@
 }
 
 .overlay h2{
-  top: 0;
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  text-align: start; 
+  padding: 20px; 
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 8px;
 }
 .slide:hover .overlay {
   opacity: 1; /* Exibe o overlay ao passar o mouse */
@@ -57,6 +65,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  padding: 19px;
 }
 
 .prev {
