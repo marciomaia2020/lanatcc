@@ -58,3 +58,5 @@ function moveSlide(direction) {
 // Para autoplay
 setInterval(() => moveSlide(1), 10000000); // muda a cada 3 segundos
 
+
+
