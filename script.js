@@ -44,20 +44,33 @@ menuBtn.addEventListener("click", () => {
 
 
 //CARROSSEL LANÇAMENTO
+// let currentSlide = 0;
+
+// function moveSlide(direction) {
+//     const slides = document.querySelectorAll('.slide ');
+//     const totalSlides = slides.length;
+
+//     // Atualiza a posição atual do slide
+//     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+//     // Calcula o deslocamento em porcentagem
+//     const offset = -currentSlide * 50; // Cada slide ocupa 100%
+//     document.querySelector('.slider-container').style.transform = `translateX(${offset}%)`;
+// }
+
+
 let currentSlide = 0;
 
 function moveSlide(direction) {
-    const slides = document.querySelectorAll('.slider img');
+    const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
 
-    // Atualiza a posição atual
+    // Atualiza a posição atual do slide
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-    // Calcula o deslocamento
-    const offset = -currentSlide * 15; // cada imagem ocupa 25%
+    // Calcula o deslocamento em porcentagem
+    const offset = -currentSlide * 25; // Cada slide ocupa 25% da largura total
     document.querySelector('.slider-container').style.transform = `translateX(${offset}%)`;
 }
-
-
 
 

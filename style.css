@@ -232,7 +232,7 @@ header .navigation .navigation-items a:hover:before{
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
 }
 
 .slider-navigation{
@@ -383,33 +383,39 @@ header .navigation{
   filter: blur(5px); 
 }
 
-/*CARROSSEL*/
+/* CARROSSEL
 .slider {
   position: relative;
-  width: 90%;
-  overflow: hidden;
+  width: 90%;  /* Carrossel ocupa 90% da tela 
+  overflow: hidden; /* Esconde as partes fora da tela 
   margin: 0 auto;
 }
 
 .slider-container {
   display: flex;
-  transition: transform 0.5s ease;
-  gap: 30px;
-  align-items: 0 auto;
+  transition: transform 0.5s ease-in-out;
+  gap: 0px; /* Remove espaço entre os slides 
+  align-items: center; /* Centraliza verticalmente os itens 
 }
 
 .slide {
   position: relative;
-  width: 100%; /* 100% / 4 imagens */
-  min-width: 10%;
-  left: 60px;
+  width: 25%; /* Cada slide ocupa 25% do carrossel */
+  flex: 0 0 25%; /* Garante que cada slide ocupe exatamente 25% 
+  max-width: 25%; /* Limita o slide para não crescer além de 25% 
+  box-sizing: border-box; /* Inclui padding e border na largura total 
 }
 
 .slide img {
-  width: 100%;
-  display: block;
+  width: 100%; /* A imagem preenche todo o slide 
+  height: auto; /* Mantém a proporção da imagem 
+  display: block; /* Remove espaços extras ao redor da imagem 
+  border-radius: 5px 5px 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Botões de navegação 
 button {
   position: absolute;
   top: 50%;
@@ -419,8 +425,62 @@ button {
   border: none;
   cursor: pointer;
   padding: 19px;
+  z-index: 10; /* Garante que os botões fiquem acima dos slides 
 }
 
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+} */
+
+
+/* CARROSSEL */
+.slider {
+  position: relative;
+  width: 90%; /* Carrossel ocupa 90% da tela */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 0px; /* Remove espaço entre slides */
+}
+
+.slide {
+  flex: 0 0 30%; /* Cada slide ocupa exatamente 25% */
+  max-width: 40%; /* Limita o slide */
+  box-sizing: border-box; /* Inclui padding/border na largura total */
+  overflow: hidden; /* Garante que imagens maiores não "vazem" */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.slide img {
+  width: 80%; /* A imagem preenche toda a largura do slide */
+  height: 80%; /* A imagem também preenche a altura do slide */
+  object-fit: cover; /* Garante que a imagem cubra o slide sem distorcer */
+  border-radius: 5px 5px 30px 0px;
+  display: block;
+}
+
+/* Botões de navegação */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 10;
+}
 
 .prev {
   left: 10px;
@@ -430,3 +490,43 @@ button {
   right: 10px;
 }
 
+/* Botões de navegação */
+button {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Botão semi-transparente */
+  color: rgb(255, 0, 0); /* Cor vermelha para o ícone */
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 100; /* Garante que o botão fique acima das imagens */
+  border-radius: 50%; /* Forma circular */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+}
+
+/* Ajuste para botão da esquerda */
+.prev {
+  left: 10px; /* Mantém o botão próximo à borda esquerda */
+}
+
+/* Ajuste para botão da direita */
+.next {
+  right: 10px; /* Mantém o botão próximo à borda direita */
+}
+
+/* Garante que o slider não sobreponha os botões */
+.slider {
+  position: relative; /* Mantém os botões como filhos do slider */
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+ /* Responsividade */
+ @media (max-width: 768px) {
+  .slide img {
+      height: 400px;
+  }
+}
