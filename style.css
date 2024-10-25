@@ -383,7 +383,7 @@ header .navigation{
   filter: blur(5px); 
 }
 
-
+/*CARROSSEL*/
 .slider {
   position: relative;
   width: 90%;
@@ -429,21 +429,4 @@ button {
 .next {
   right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
